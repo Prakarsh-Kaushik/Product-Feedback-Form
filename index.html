@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Feedback Form</title>
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+  <!-- Import Bootstap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Import Icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- Import Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="content">
+    <h1 id="title"> Product Feedback Form</h1> <br>
+  <p id="description"><strong>Just wanted to say thank you for your purchase. We’re so lucky to have customers like you!</strong><br><em>If you could kindly take a few minutes from your precious time and provide with Feedback on your product, we'd
+      reallly be grateful and try to improve accordingly</em></p>
+      <hr>
+  <form id="survey-form" action="prakaarshkaushik@programmer.net" method="post">
+    <fieldset>
+      <br><br>
+      <label id="name-label" for="Name">Name - </label>
+    <input id="name" type="text" name="Name" placeholder="Name" required> <br> <br>
+    <label id="email-label" for="email">Email - </label>
+    <input type="text" name="email" placeholder="Email  (xyz@xyz.com)" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br> <br>
+    <label id="number-label" for="Number">Phone - </label>
+    <input type="tel" name="number" placeholder="Phone (xxx-xxxx-xxx) " required pattern=[0-9]{3}-[0-9]{4}-[0-9]{3} min="0000000000" max="9999999999"> <br> <br>
+  <label for="age">Age - </label>
+  <select id="dropdown" name="Age" placeholder="Select Age Group"  required>
+    <option value="Select Age Group">Select Age Group</option>
+    <option value="Below 12"> Below 12</option>
+    <option value="13 to 18">13 to 18</option>
+    <option value="19 to 35"> 19 to 35 </option>
+    <option value="36 to 60">36 to 60</option>
+    <option value="Above 60"> Above 60</option>
+  </select> <br> <br>
+  <label for="scale">On a Scale of 1 to 10, How much do you like our products</label> <br> <br>
+  <input type="radio" name="Scale" value="">
+  <label for="1">1</label>
+  <input type="radio" name="Scale" value="">
+  <label for="2">2</label>
+  <input type="radio" name="Scale" value="">
+  <label for="3">3</label>
+  <input type="radio" name="Scale" value="">
+  <label for="4">4</label>
+  <input type="radio" name="Scale" value="">
+  <label for="5">5</label>
+  <input type="radio" name="Scale" value="">
+  <label for="6">6</label>
+  <input type="radio" name="Scale" value="">
+  <label for="7">7</label>
+  <input type="radio" name="Scale" value="">
+  <label for="8">8</label>
+  <input type="radio" name="Scale" value="">
+  <label for="9">9</label>
+  <input type="radio" name="Scale" value="">
+  <label for="10">10</label> <br> <br>
+  <label for="myfile">Upload Product Image:</label>
+  <input type="file" id="myfile" name="myfile"> <br> <br>
+  <label for="Suggestion">Suggestions/Feedback</label> <br> <br>
+  <textarea name="Suggestion/Feedback"placeholder="Give your suggestions/feeback here. It will help us in improving our product and serving you better" rows="8" cols="80"></textarea> <br> <br>
+  <input type="checkbox" name="newsletter" value="">
+  <label for="newsletter">Do you want to signup for our weekly newsletter?</label> <br> <br>
+  <input type="submit" class="btn btn-outline-success btn-lg" name="Submit" value="Submit">
+  <input type="reset" class="btn btn-outline-danger btn-lg" name="Reset" value="Reset"> <br> <br>
+  </form>
+  </<fieldset>
+  </div>
+</body>
+<footer><br><br>
+  <p class="foot">Made with <i class="fas fa-heart"></i> in <img src="images\india.png" alt="India"> by <a id="linkedin" href="https://www.linkedin.com/in/prakarshkaushik/">Prakarsh Kaushik</a></p>
+</footer>
+
+</html>
